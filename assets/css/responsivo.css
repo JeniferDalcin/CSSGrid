@@ -1,0 +1,93 @@
+@media screen and (min-width:  0){ /* Celular*/
+	.destaques__principal, .destaques__categorias{
+		grid-column: 1 / 5;
+	}
+	.destaques__secundario:nth-child(2){
+		display: none;
+		grid-column: none;
+		grid-row: none;
+	}
+	.destaques__secundario:nth-child(3){
+		display: none;
+		grid-column: none;
+		grid-row: none;
+	}
+	.destaques__secundario:nth-child(4){
+		display: none;
+		grid-column: none;
+		grid-row: none;
+	}
+	.destaques__secundario:nth-child(5){
+		display: none;
+		grid-column: none;
+		grid-row: none;
+	}
+
+	.populares__conteudo{
+		flex-direction: column;
+	}
+
+	.populares__card{
+		grid-template-rows: 150px auto;
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 3rem;
+	}
+}
+
+@media screen and (min-width:  768px){ /*Tablet*/
+	.destaques__principal{
+		grid-column: 1 / 4;
+	}
+
+	.destaques__secundario:nth-child(2){
+		display: flex;
+		grid-column: 4 / 4;
+		grid-row: 1 / 1;
+	}
+	.destaques__secundario:nth-child(3){
+		display: flex;
+		grid-column: 4 / 4;
+		grid-row: 2 / 2;
+	}
+	.destaques__secundario:nth-child(4){
+		display: flex;
+		grid-column: 4 / 4;
+		grid-row: 3 / 3;
+	}
+	.destaques__secundario:nth-child(5){
+		display: flex;
+		grid-column: 3 / 3;
+		grid-row: 3 / 3;
+	}
+	.destaques__categorias{
+		grid-column: 1 / 3;
+	}
+	.populares__conteudo{
+		flex-direction: row;
+	}
+	.populares__card{
+		grid-template-rows: 173px auto;
+		margin-bottom: 3rem;
+		margin-right: 1rem;
+		width: calc(50% - 1rem);
+	}
+}
+
+@media screen and (min-width:  992px){ /*Desktop Antigos requisição mínima de tamanho para esse estilo 992px*/
+	.populares__card{
+		width: calc(33.33% - 1rem);
+	}
+}
+
+@media screen and (min-width:  1200px){ /*Desktop só aplica esse estilo quando a tela for maior que 1200px*/
+	.populares__card{
+		margin-bottom: 0;
+		width: calc(20% - 1rem);
+	}
+}
+
+/* Vai sempre da menor tela para a maior e o que se repete não precisa colocar, lembrar de tirar as 
+definições iguais lá onde a categoria foi definida, no caso populares.css e destaques.css, oque a gente
+mexer no media queries saí das definições do css principal, e o que estiver definido nas medias queries
+de tela menor não se repete nas maiores se você quiser manter. Só coloca nas maiores o que vai mudar naquela tela.
