@@ -7,7 +7,7 @@ Create a responsive single page of featured games, popular games and popular app
 
 Resposive:
 
-![flex box](https://user-images.githubusercontent.com/83920579/166953162-bca2ac6c-3900-43bc-b7ad-1ac2b94ca49d.png)
+![flex box](https://user-images.githubusercontent.com/83920579/166954407-0dbff6b8-778c-48ec-92c0-0c5c21547567.png)
 
 This is an exercise from an Alura class, CSS Grid: simplificando layouts.
 ## Want to learn more about CSS Grid?
