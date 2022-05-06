@@ -1,5 +1,5 @@
 # CSS Grid
-Create a responsive single page of featured games, popular games and popular apps using CSS Grid.
+Create a responsive landing page of featured games, popular games and popular apps using CSS Grid.
 
 ![css grid](https://user-images.githubusercontent.com/83920579/166468365-e7158bc8-31e7-4149-82e3-1a9284d1fecc.png)
 
